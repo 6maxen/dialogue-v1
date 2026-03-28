@@ -1,7 +1,6 @@
 botMsgEl = document.getElementById("bot-msg")
 botMsg = botMsgEl.textContent
-
-console.log(botMsgEl)
+choiceSection = document.getElementById("choice-section")
 
 function loading(callback) {
     const dots = [".", "..", "..."]
@@ -23,14 +22,13 @@ function loading(callback) {
 
 loading(function() {
     botMsgEl.textContent = "Hi, nice to meet you!"
+    choiceSection.style.display = "block"
 })
 
 document.querySelectorAll(".choice-btn").forEach(function(btn) {
     btn.addEventListener('click', function() {
         document.getElementById("user-msg").textContent = btn.textContent
-        
+        choiceSection.innerHTML = ``
     })
 })
-
-main = document.getElementById("main")
 
