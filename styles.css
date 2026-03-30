@@ -4,10 +4,72 @@
 }
 
 body {
-    background-color: black;
-    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(19, 19, 19);
+    color: white;
 }
 
-#choice-section {
-    display: none
+#choice-section,
+#user-section {
+    display: none;
+}
+
+.ital {
+    font-style: italic;
+}
+
+p { white-space: pre; }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+#input-section {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0 10rem;
+    margin-top: auto;
+}
+
+#dialogue-section {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10rem;
+}
+
+#bot-msg, #bot-msg2, #bot-msg3, #user-msg, .choice-btn {
+    background-color: rgb(42, 42, 177);
+    color: whitesmoke;
+    display: flex;
+    width: fit-content;
+    padding: 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 25;
+}
+
+li {
+    list-style-type: none;
+}
+
+#user-msg, .choice-btn {
+    margin-left: auto;
 }
